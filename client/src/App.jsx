@@ -36,7 +36,7 @@ setCargando(true);
 setError(null);
 try {
 // Fetch a nuestra API local (CORS debe estar habilitado en backend)
-const respuesta = await fetch('http://localhost:3001/api/sensores');
+const respuesta = await fetch("https:server-ydr1.onrender.com/api/sensores");
 if (!respuesta.ok) {
 throw new Error(`Error HTTP: ${respuesta.status}`);
 }
